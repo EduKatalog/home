@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sampel Interactive Storybook Anak — EduCraft</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    /* Efek jilid buku fisik di sisi kiri cover */
+    .book-spine {
+      box-shadow: inset 7px 0 10px -4px rgba(0, 0, 0, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-slate-800 hover:text-indigo-600 transition">
+        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+        <span>Kembali ke Katalog Utama</span>
+      </a>
+      <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20beli%20Tool%20Interactive%20Storybook%20(Rp%2019.000)" 
+         target="_blank"
+         class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-indigo-600 text-white text-xs sm:text-sm font-semibold hover:bg-indigo-700 transition shadow-sm">
+        <i data-lucide="sparkles" class="w-4 h-4"></i>
+        <span>Beli Tool Rp 19.000</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="py-12 bg-gradient-to-b from-indigo-50/60 to-slate-50 text-center px-4 border-b border-slate-200/80">
+    <div class="max-w-3xl mx-auto">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-4">
+        <i data-lucide="book-open" class="w-3.5 h-3.5"></i> Sampel Gratis Terbuka
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Koleksi Interactive Storybook Anak
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+        Klik dan baca langsung 5 buku cerita di bawah ini. Anda juga bisa membuat buku cerita bergambar 3D/Clay interaktif seperti ini sendiri menggunakan tool generator kami!
+      </p>
+    </div>
+  </header>
+
+  <!-- KATALOG 5 BUKU -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- BUKU 1 -->
+      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <div>
+          <!-- COVER CONTAINER -->
+          <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden book-spine">
+            <!-- Ganti file gambar Anda di src="cover-nusa.jpg" -->
+            <img src="https://ibb.co.com/dJmpF70w" 
+                 alt="Nusa dan Selendang Batik Ajaib" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-white text-xs font-semibold px-2 py-1 rounded bg-black/40 backdrop-blur-sm border border-white/20">
+                Clay 3D Style
+              </span>
+            </div>
+          </div>
+
+          <div class="p-5">
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition mb-2">
+              Nusa dan Selendang Batik Ajaib
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Petualangan Nusa terbang melintasi awan berbekal selendang bermotif batik titipan sang kakek untuk menyelamatkan desa dari badai.
+            </p>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">12 Halaman</span>
+              <span>•</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Tema: Budaya & Keberanian</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 pt-0">
+          <!-- Ganti href="#" dengan link PDF atau link bacaan Anda -->
+          <a href="https://gemini.google.com/share/8d7f8c50abd7?skid=a90120ba-32f7-42e6-9146-b4d54163bc66" target="_blank" 
+             class="w-full py-2.5 px-4 rounded-xl bg-indigo-50 hover:bg-indigo-600 text-indigo-600 hover:text-white font-semibold text-xs flex items-center justify-center gap-2 transition duration-200">
+            <i data-lucide="book-marked" class="w-4 h-4"></i> Baca Sampel Gratis
+          </a>
+        </div>
+      </div>
+
+      <!-- BUKU 2 -->
+      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <div>
+          <!-- COVER CONTAINER -->
+          <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden book-spine">
+            <!-- Ganti file gambar Anda di src="cover-kauskaki.jpg" -->
+            <img src="https://ibb.co.com/tWWnQC6" 
+                 alt="Misteri Hilangnya Kaus Kaki Sebelah Kiri" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-white text-xs font-semibold px-2 py-1 rounded bg-black/40 backdrop-blur-sm border border-white/20">
+                Clay 3D Style
+              </span>
+            </div>
+          </div>
+
+          <div class="p-5">
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition mb-2">
+              Misteri Hilangnya Kaus Kaki Sebelah Kiri
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Penyelidikan malam hari di balik mesin cuci bersama Kucing Putih yang mengungkap makhluk monster bulu pemakan kaus kaki.
+            </p>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">10 Halaman</span>
+              <span>•</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Tema: Misteri Lucu & Logika</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 pt-0">
+          <a href="https://gemini.google.com/share/3fc8c0a145ed?skid=7b105c7a-5d09-47a1-8fd0-014d44d9c418" target="_blank" 
+             class="w-full py-2.5 px-4 rounded-xl bg-indigo-50 hover:bg-indigo-600 text-indigo-600 hover:text-white font-semibold text-xs flex items-center justify-center gap-2 transition duration-200">
+            <i data-lucide="book-marked" class="w-4 h-4"></i> Baca Sampel Gratis
+          </a>
+        </div>
+      </div>
+
+      <!-- BUKU 3 -->
+      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <div>
+          <!-- COVER CONTAINER -->
+          <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden book-spine">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" 
+                 alt="Ksatria Kecil dan Robot Penjaga Hutan" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-white text-xs font-semibold px-2 py-1 rounded bg-black/40 backdrop-blur-sm border border-white/20">
+                Sci-Fi Edu
+              </span>
+            </div>
+          </div>
+
+          <div class="p-5">
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition mb-2">
+              Ksatria Kecil & Robot Hutan
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Kisah persahabatan anak desa dengan robot pembersih sampah untuk merawat sungai dan hutan lindung.
+            </p>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">14 Halaman</span>
+              <span>•</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Tema: Lingkungan & Sains</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 pt-0">
+          <a href="#" target="_blank" 
+             class="w-full py-2.5 px-4 rounded-xl bg-indigo-50 hover:bg-indigo-600 text-indigo-600 hover:text-white font-semibold text-xs flex items-center justify-center gap-2 transition duration-200">
+            <i data-lucide="book-marked" class="w-4 h-4"></i> Baca Sampel Gratis
+          </a>
+        </div>
+      </div>
+
+      <!-- BUKU 4 -->
+      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <div>
+          <!-- COVER CONTAINER -->
+          <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden book-spine">
+            <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80" 
+                 alt="Dilo, Dinosaurus yang Takut Gelap" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-white text-xs font-semibold px-2 py-1 rounded bg-black/40 backdrop-blur-sm border border-white/20">
+                Bedtime Story
+              </span>
+            </div>
+          </div>
+
+          <div class="p-5">
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition mb-2">
+              Dilo: Dino yang Takut Gelap
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Membantu anak-anak mengatasi rasa cemas saat tidur sendiri lewat petualangan T-Rex kecil yang menemukan keindahan bintang.
+            </p>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">10 Halaman</span>
+              <span>•</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Tema: Emosi & Keberanian</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 pt-0">
+          <a href="#" target="_blank" 
+             class="w-full py-2.5 px-4 rounded-xl bg-indigo-50 hover:bg-indigo-600 text-indigo-600 hover:text-white font-semibold text-xs flex items-center justify-center gap-2 transition duration-200">
+            <i data-lucide="book-marked" class="w-4 h-4"></i> Baca Sampel Gratis
+          </a>
+        </div>
+      </div>
+
+      <!-- BUKU 5 -->
+      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <div>
+          <!-- COVER CONTAINER -->
+          <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden book-spine">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" 
+                 alt="Mina dan Nelayan Bintang" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-white text-xs font-semibold px-2 py-1 rounded bg-black/40 backdrop-blur-sm border border-white/20">
+                Penuh Makna
+              </span>
+            </div>
+          </div>
+
+          <div class="p-5">
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition mb-2">
+              Mina & Perahu Pemburu Bintang
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Perjalanan gadis pesisir menaiki perahu dayung menuju ufuk laut mencari bintang jatuh demi menyembuhkan kakeknya.
+            </p>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">12 Halaman</span>
+              <span>•</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Tema: Kasih Sayang Keluarga</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 pt-0">
+          <a href="#" target="_blank" 
+             class="w-full py-2.5 px-4 rounded-xl bg-indigo-50 hover:bg-indigo-600 text-indigo-600 hover:text-white font-semibold text-xs flex items-center justify-center gap-2 transition duration-200">
+            <i data-lucide="book-marked" class="w-4 h-4"></i> Baca Sampel Gratis
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA BANNER PEMBELIAN TOOLS DI BAWAH -->
+    <div class="mt-16 rounded-3xl bg-gradient-to-r from-indigo-900 via-indigo-800 to-slate-900 text-white p-8 sm:p-12 text-center shadow-xl relative overflow-hidden">
+      <div class="relative z-10 max-w-2xl mx-auto">
+        <span class="px-3 py-1 rounded-full bg-indigo-500/30 text-indigo-200 text-xs font-semibold border border-indigo-400/30 mb-4 inline-block">
+          Ingin Membuat Buku Seperti Ini Sendiri?
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold mb-4">
+          Dapatkan Tool Generator Storybook Otomatis
+        </h3>
+        <p class="text-indigo-200 text-xs sm:text-sm leading-relaxed mb-8">
+          Buat cerita, susun jalan cerita interaktif, dan hasilkan prompt visual karakter tanah liat (claymation) seperti di atas dalam hitungan menit. Cukup bayar sekali, pakai selamanya.
+        </p>
+
+        <div class="inline-flex flex-col sm:flex-row items-center gap-4">
+          <div class="text-left bg-white/10 px-5 py-2.5 rounded-xl border border-white/10">
+            <span class="text-[11px] text-indigo-300 block">Harga Promo Terbatas</span>
+            <span class="text-xl font-bold text-white">Hanya Rp 19.000</span>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20membeli%20Tool%20Interactive%20Storybook%20seharga%20Rp%2019.000" 
+             target="_blank"
+             class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm shadow-lg shadow-emerald-900/30 transition flex items-center gap-2">
+            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+            <span>Beli Tool Generator Sekarang</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
